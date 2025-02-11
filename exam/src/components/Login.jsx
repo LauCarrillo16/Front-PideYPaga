@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useUser } from '../UserContext';
 import AxiosConfiguration from '../AxiosConfiguration';
+import '../styles.css'; 
 
 export const Login = () => {
     const [email, setEmail] = useState('');
@@ -55,8 +56,8 @@ export const Login = () => {
     };
 
     return (
-            <div className="backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-lg max-w-sm w-screen text-white">
-                <h1 className="text-2xl font-bold text-center">Login</h1>
+            <main className='w-screen flex justify-around items-center h-screen flex-col bg-white signin'>
+                <h2 className="text-4xl font-semibold text-black mb-6">Login</h2>
                 <form className="flex flex-col space-y-4 gap-4 pt-6" onSubmit={handleSubmit}>
                     <input
                         onChange={handleChange}
@@ -91,6 +92,6 @@ export const Login = () => {
                         Sign up. It's free
                     </a>
                 </p>
-            </div>
+                </main>
     );
 };

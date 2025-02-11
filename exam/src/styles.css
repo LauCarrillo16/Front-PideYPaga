@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body{
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Degradado bonito */
+}
 /* Estilo general del fondo */
 .signin {
     display: flex;
@@ -60,4 +64,7 @@
     font-size: 14px;
     margin-top: 5px;
   }
-  
+
+.login{
+    
+}
