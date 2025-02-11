@@ -58,7 +58,7 @@ export const Login = () => {
     return (
             <main className='w-screen flex justify-around items-center h-screen flex-col bg-white signin'>
                 <h2 className="text-4xl font-semibold text-black mb-6">Login</h2>
-                <form className="flex flex-col space-y-4 gap-4 pt-6" onSubmit={handleSubmit}>
+                <form className="flex flex-col space-y-4 gap-4 pt-6 text-black" onSubmit={handleSubmit}>
                     <input
                         onChange={handleChange}
                         name="email"
