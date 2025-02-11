@@ -10,6 +10,7 @@ export const SignIn = () => {
         email: "",
         password: "",
         repeatPassword: "",
+        admin: "no",
     });
 
     const [errors, setErrors] = useState({});

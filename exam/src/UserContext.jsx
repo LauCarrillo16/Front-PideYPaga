@@ -6,6 +6,7 @@ const UserContext = createContext();
 export const UserProvider = ({ children }) => {
     const [usuario, setUsuario] = useState(() => {
       const userFromStorage = localStorage.getItem('usuario');
+      console.log(localStorage.getItem('usuario'))
       return userFromStorage ? JSON.parse(userFromStorage) : null;
     });
 

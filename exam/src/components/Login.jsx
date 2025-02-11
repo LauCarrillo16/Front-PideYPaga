@@ -18,7 +18,7 @@ export const Login = () => {
             params: { email, password },
         })
             .then((response) => {
-                const { token, id, name,email} = response.data;
+                const { token, id, name,email, admin} = response.data;
     
                 console.log('Login successful:', response.data);
     
@@ -29,11 +29,12 @@ export const Login = () => {
                 actualizarUsuario({
                     id,
                     name,
-                    email
+                    email, 
+                    admin
                 });
     
                 alert('Bienvenido/a!');
-                navigate("/home")
+                navigate("/panel")
                 
             })
             .catch((error) => {

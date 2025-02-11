@@ -9,12 +9,21 @@ export const Panel = () => {
     const handleNavigation = (path) => {
         navigate(path);
     };
+    const handleLogout = () => {
+        localStorage.removeItem('authToken');
+        user.logout();
+    };
 
     return (
+
+        <>
+
+        
         <div>
             <h1>Panel de Control</h1>
-            <button onClick={() => handleNavigation('/inventory')}>Ir a Link 1</button>
+            <button onClick={() => handleNavigation('/inventory')}>Inventory</button>
             <button onClick={() => handleNavigation('/orders')}>Ir a Link 2</button>
         </div>
+        </>
     );
 };
