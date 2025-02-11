@@ -112,7 +112,7 @@ export const Inventory =  () => {
           
     
           {/* Sección fija con formularios de Producto y Administrador */}
-          <div className="w-1/4 bg-gray-700 text-white p-4 flex flex-col gap-4 items-center">
+          <div className="w-1/4 bg-gray-700 text-white p-4 flex flex-col gap-4 items-center dashboard-container">
             <AddProductForm agregarProducto={agregarProducto} />
             <AddAdminForm admin={admin} setAdmin={setAdmin} agregarAdministrador={agregarAdministrador} />
           </div>
@@ -135,7 +135,7 @@ export const Inventory =  () => {
       };
     
       return (
-        <div className="bg-gray-600 text-white p-4 rounded-lg">
+        <div className="bg-gray-600 text-white p-4 rounded-lg products-container">
           <h2 className="text-lg font-bold mb-2">Agregar Producto</h2>
           <form onSubmit={handleSubmit}>
             <input
