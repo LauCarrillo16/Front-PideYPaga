@@ -1,0 +1,95 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .flex {
+    display: flex;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+  
+  .bg-gray-700 {
+    background-color: #374151;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  /* Sección de productos */
+  .grid {
+    display: grid;
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gap-4 {
+    gap: 1rem;
+  }
+  
+  /* Tarjetas de producto */
+  .bg-gray-600 {
+    background-color: #4b5563;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .w-48 {
+    width: 12rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .rounded-lg {
+    border-radius: 8px;
+  }
+  
+  /* Inputs */
+  input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  /* Botones */
+  button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #222;
+  }
+  
+  /* Ícono de eliminar */
+  span {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
