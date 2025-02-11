@@ -17,16 +17,9 @@ export const Panel = () => {
     return (
         <main className='w-screen flex justify-around items-center h-screen flex-col bg-white signin'>
 
-
-        <>
-
-        
-        <div>
             <h1>Panel de Control</h1>
             <button onClick={() => handleNavigation('/inventory')}>Inventory</button>
             <button onClick={() => handleNavigation('/orders')}>Ir a Link 2</button>
         </main>
-        </div>
-        </>
     );
 };
