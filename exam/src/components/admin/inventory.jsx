@@ -1,8 +1,29 @@
 import React, { useState } from 'react';
+import { Panel } from './panel';
+import AxiosConfiguration from '../../AxiosConfiguration';
 
-export const Inventory =  () => {
+export const Inventory =  ({usuario}) => {
+
+  const fetchProductsByAdmin = async (userId) => {
+    try {
+      const response = await AxiosConfiguration.get(`products`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('authToken')}`,
+        },
+      });
+
+      return response.data;
+    } catch (error) {
+      console.error(`Error fetching posts for user ${userId}:`, error);
+      return [];
+    }
+  };
+
+
     return (
+
       <div className="flex flex-wrap gap-4 p-4 bg-gray-200 min-h-screen">
+        <Panel></Panel>
         {/* Sección de productos */}
         <div className="grid grid-cols-3 gap-4">
           <ProductCard />
@@ -21,7 +42,7 @@ export const Inventory =  () => {
     );
   }
   
-  // Componente para cada tarjeta de producto
+  
   function ProductCard() {
     return (
       <div className="bg-gray-600 text-white p-4 rounded-lg w-48 text-center">
