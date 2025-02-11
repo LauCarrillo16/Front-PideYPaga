@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import AxiosConfiguration from '../AxiosConfiguration';
+import '../styles.css'; 
 
 
 export const SignIn = () => {
@@ -63,7 +64,7 @@ export const SignIn = () => {
     };
 
     return (
-            <main className='w-screen flex justify-around items-center h-screen flex-col bg-white'>
+            <main className='w-screen flex justify-around items-center h-screen flex-col bg-white signin'>
                 <h2 className="text-4xl font-semibold text-black mb-6">
                     Sign in
                 </h2>

@@ -1,1 +1,63 @@
 @import "tailwindcss";
+
+/* Estilo general del fondo */
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Degradado bonito */
+  }
+  
+  /* Contenedor del formulario */
+  form {
+    width: 100%;
+    max-width: 400px; /* Limita el ancho */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Estilos de los inputs */
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  /* Efecto al enfocar inputs */
+  input:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(79, 172, 254, 0.5);
+  }
+  
+  /* Estilos del botón */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4facfe;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3a86f6;
+  }
+  
+  /* Mensajes de error */
+  .text-red-500 {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
