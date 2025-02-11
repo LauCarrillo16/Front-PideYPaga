@@ -5,7 +5,7 @@ import { SignIn } from "./components/SigIn";
 import { UserProvider } from "./UserContext";
 import { Home } from './components/Home';
 import { Inventory } from './components/admin/inventory';
-// import { Orders } from './components/admin/orders';
+import { Orders } from './components/admin/orders';
 // import { Panel } from './components/admin/panel';
 
 
@@ -21,8 +21,8 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/inventory" element={<Inventory />} />
-          {/* <Route path="/orders" element={<Orders />} />
-          <Route path="/panel" element={<Panel />} /> */}
+          <Route path="/orders" element={<Orders />} />
+          {/* <Route path="/panel" element={<Panel />} /> */}
         </Routes>
       </Router>
       </UserProvider>

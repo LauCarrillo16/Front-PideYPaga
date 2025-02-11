@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles2.css'; 
+import '../../styles.css'; 
 import { Panel } from './panel';
 import AxiosConfiguration from '../../AxiosConfiguration';
 
@@ -94,7 +94,7 @@ export const Inventory =  () => {
         <div className="flex min-h-screen bg-gray-200 w-screen">
           {/* Sección de productos */}
           <div className="flex-1 p-4">
-            <h2 className="text-xl font-bold mb-4">Lista de Productos</h2>
+            <h2 className="text-xl font-bold mb-4 text-black text-center">Lista de Productos</h2>
     
             {/* Tarjetas de productos */}
             <div className="grid grid-cols-3 gap-4 mt-4">
@@ -112,7 +112,7 @@ export const Inventory =  () => {
           
     
           {/* Sección fija con formularios de Producto y Administrador */}
-          <div className="w-1/3 bg-gray-700 text-white p-4 flex flex-col gap-4">
+          <div className="w-1/4 bg-gray-700 text-white p-4 flex flex-col gap-4 items-center">
             <AddProductForm agregarProducto={agregarProducto} />
             <AddAdminForm admin={admin} setAdmin={setAdmin} agregarAdministrador={agregarAdministrador} />
           </div>
